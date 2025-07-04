@@ -8,6 +8,9 @@ TagManager:
   - EnemyGoal
   - PuckWall
   - PlayerWall
+  - MeHandle
+  - LevelHandler
+  - ItHandle
   layers:
   - Default
   - TransparentFX
