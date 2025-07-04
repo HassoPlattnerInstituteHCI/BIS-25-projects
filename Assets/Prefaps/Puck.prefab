@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 2185942299413422948}
   - component: {fileID: 2185942299413422953}
   - component: {fileID: 2185942299413422952}
-  - component: {fileID: 2185942299413422958}
+  - component: {fileID: -3250266265991989340}
+  - component: {fileID: 4042833118134718833}
   m_Layer: 0
   m_Name: Puck
   m_TagString: ItHandle
@@ -30,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2185942299413422951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.1, z: 0.5}
+  m_LocalPosition: {x: -1.15, y: 0, z: -9.93}
+  m_LocalScale: {x: 0.5, y: 0.18837, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -129,7 +130,7 @@ MonoBehaviour:
   onLower: 0
   isPassable: 0
   numberOfCorners: 8
---- !u!114 &2185942299413422958
+--- !u!114 &-3250266265991989340
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,8 +139,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 2185942299413422951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a929a0469cc1a6345ba728fa3fbd6b44, type: 3}
+  m_Script: {fileID: 11500000, guid: bfe6d75e7a4f8cc4c8272df66fa40323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inTransition: 0
-  isFrozen: 0
+  startingSpeed: 3
+  maxSpeed: 5
+--- !u!54 &4042833118134718833
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2185942299413422951}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

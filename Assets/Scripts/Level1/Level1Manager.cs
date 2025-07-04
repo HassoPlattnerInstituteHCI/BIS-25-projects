@@ -1,3 +1,4 @@
+/*
 using DualPantoToolkit;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ public class Level1Manager : MonoBehaviour
         gameManager = GetComponent<GameManager>();
         StartLevel();
     }
-
+    
     async void StartLevel()
     {
         await Task.Delay(1000);
@@ -33,7 +34,7 @@ public class Level1Manager : MonoBehaviour
 
         gameManager.upperHandle.Free();
     }
-
+    
     //level task system
     void OnEnable()
     {
@@ -71,3 +72,4 @@ public class Level1Manager : MonoBehaviour
         }
     }
 }
+*/

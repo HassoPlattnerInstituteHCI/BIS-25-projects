@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657886, g: 0.4964128, b: 0.57481724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -232,7 +232,6 @@ GameObject:
   - component: {fileID: 33580814}
   - component: {fileID: 33580813}
   - component: {fileID: 33580812}
-  - component: {fileID: 33580815}
   m_Layer: 0
   m_Name: upperWall
   m_TagString: PuckWall
@@ -318,19 +317,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33580810}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &33580815
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33580810}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9999999, y: 1, z: 1.0000002}
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.0000009536743}
 --- !u!1 &217502861
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,7 +426,6 @@ GameObject:
   - component: {fileID: 283147059}
   - component: {fileID: 283147058}
   - component: {fileID: 283147057}
-  - component: {fileID: 283147060}
   m_Layer: 0
   m_Name: enemySafetyWall
   m_TagString: PuckWall
@@ -526,19 +511,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283147055}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &283147060
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283147055}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 1, z: 1.0000001}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &393928490
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,7 +523,6 @@ GameObject:
   - component: {fileID: 393928494}
   - component: {fileID: 393928493}
   - component: {fileID: 393928492}
-  - component: {fileID: 393928495}
   m_Layer: 0
   m_Name: playerSafetyWall
   m_TagString: PuckWall
@@ -637,19 +608,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393928490}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &393928495
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 393928490}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 1, z: 1.0000001}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &398881941
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +620,6 @@ GameObject:
   - component: {fileID: 398881945}
   - component: {fileID: 398881944}
   - component: {fileID: 398881943}
-  - component: {fileID: 398881946}
   m_Layer: 0
   m_Name: enemyUpperWall
   m_TagString: PuckWall
@@ -748,19 +705,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398881941}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &398881946
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398881941}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 1, z: 1.0000001}
-  m_Center: {x: -0.00000023841858, y: 0, z: 0.0000019073486}
 --- !u!1 &401377776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,55 +1093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd9a4ccc893f26c4f99f1784a5e8af34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &638731834
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 638731836}
-  - component: {fileID: 638731835}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &638731835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638731834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a7c3dc45082d51478a1467f1e44747e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  puck: {fileID: 2185942299413422951, guid: adca44bd45ceb7846bed925b66919038, type: 3}
-  player: {fileID: 1986453294942121419, guid: 0e9235aa2a65d7b4284accdc37049cd5, type: 3}
-  enemy: {fileID: 808847684294573242, guid: 5f40a2599ec714640bf329fd0c214092, type: 3}
-  upperHandle: {fileID: 0}
-  lowerHandle: {fileID: 0}
---- !u!4 &638731836
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638731834}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.35802, y: -4.2159224, z: -8.894072}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685300103
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,7 +1358,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &694067241
 MonoBehaviour:
@@ -1477,16 +1372,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afb52c5dd7ac8e149a23e8f52ccf74bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walls:
-  - {fileID: 401377776}
-  - {fileID: 1764601473}
-  - {fileID: 1812021187}
-  - {fileID: 538205736}
-  - {fileID: 1993412049}
-  - {fileID: 835096055}
-  - {fileID: 822056149}
-  - {fileID: 1403041405}
-  playerStartPosition: {fileID: 1018869424}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1466,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &743228114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 826605487606422809, guid: f08d327e9fb42f94d97ba9d1d226d418, type: 3}
+  m_PrefabInstance: {fileID: 1569897256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &743228122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743228114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a7c3dc45082d51478a1467f1e44747e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 2185942299413422951, guid: adca44bd45ceb7846bed925b66919038, type: 3}
+  player: {fileID: 1986453294942121419, guid: 0e9235aa2a65d7b4284accdc37049cd5, type: 3}
+  enemy: {fileID: 808847684294573242, guid: 5f40a2599ec714640bf329fd0c214092, type: 3}
+  ballSpawn: {fileID: 0}
+  playerSpawn: {fileID: 0}
+  enemySpawn: {fileID: 0}
 --- !u!1 &822056149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,7 +1753,6 @@ GameObject:
   - component: {fileID: 890946780}
   - component: {fileID: 890946779}
   - component: {fileID: 890946778}
-  - component: {fileID: 890946781}
   m_Layer: 0
   m_Name: lowerWall
   m_TagString: PuckWall
@@ -1931,19 +1838,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890946776}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &890946781
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890946776}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9999999, y: 1, z: 1.0000002}
-  m_Center: {x: 0.000000029802322, y: 0, z: 0}
 --- !u!1 &908926400
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,6 +2028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1018869424}
+  - component: {fileID: 1018869425}
   m_Layer: 0
   m_Name: PlayerSpawnpoint
   m_TagString: Untagged
@@ -2149,13 +2044,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018869423}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5439968, y: 5.7211146, z: -3.3364267}
+  m_LocalPosition: {x: -2.06, y: 5.7211146, z: -3.3364267}
   m_LocalScale: {x: 1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1332885596}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1018869425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018869423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7948ea43f9f03c647aa1ec214c4fbde9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traceShape: 0
+  isOnUpper: 1
+  description: 
+  priority: 10
 --- !u!1 &1160240808
 GameObject:
   m_ObjectHideFlags: 0
@@ -2265,7 +2176,6 @@ GameObject:
   - component: {fileID: 1160663149}
   - component: {fileID: 1160663148}
   - component: {fileID: 1160663147}
-  - component: {fileID: 1160663150}
   m_Layer: 0
   m_Name: playerUpperWall
   m_TagString: PuckWall
@@ -2351,19 +2261,54 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160663145}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1160663150
-BoxCollider:
+--- !u!1 &1243944511
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1160663145}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 1, z: 1.0000001}
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1243944512}
+  - component: {fileID: 1243944513}
+  m_Layer: 0
+  m_Name: PuckSpawnpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1243944512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243944511}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.56, y: 5.7211146, z: -2.75}
+  m_LocalScale: {x: 1, y: 0.1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1332885596}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1243944513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243944511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7948ea43f9f03c647aa1ec214c4fbde9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traceShape: 0
+  isOnUpper: 0
+  description: 
+  priority: 5
 --- !u!1 &1247553985
 GameObject:
   m_ObjectHideFlags: 0
@@ -2426,8 +2371,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1018869424}
+  - {fileID: 1243944512}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1350310934
 GameObject:
@@ -2664,7 +2610,6 @@ GameObject:
   - component: {fileID: 1451520740}
   - component: {fileID: 1451520739}
   - component: {fileID: 1451520738}
-  - component: {fileID: 1451520741}
   m_Layer: 0
   m_Name: enemyLowerWall
   m_TagString: PuckWall
@@ -2750,19 +2695,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451520736}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1451520741
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451520736}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 1, z: 1.0000001}
-  m_Center: {x: 0, y: 0, z: 0.0000019073486}
 --- !u!1 &1455584630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2867,8 +2799,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 826605487606422808, guid: f08d327e9fb42f94d97ba9d1d226d418, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 826605487606422809, guid: f08d327e9fb42f94d97ba9d1d226d418, type: 3}
       propertyPath: m_Name
+      value: Panto
+      objectReference: {fileID: 0}
+    - target: {fileID: 826605487606422809, guid: f08d327e9fb42f94d97ba9d1d226d418, type: 3}
+      propertyPath: m_TagString
       value: Panto
       objectReference: {fileID: 0}
     - target: {fileID: 826605487606422813, guid: f08d327e9fb42f94d97ba9d1d226d418, type: 3}
@@ -2914,6 +2854,10 @@ PrefabInstance:
     - target: {fileID: 826605487606422813, guid: f08d327e9fb42f94d97ba9d1d226d418, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827900398297005970, guid: f08d327e9fb42f94d97ba9d1d226d418, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00048828125
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f08d327e9fb42f94d97ba9d1d226d418, type: 3}
@@ -3283,7 +3227,6 @@ GameObject:
   - component: {fileID: 1784222957}
   - component: {fileID: 1784222956}
   - component: {fileID: 1784222955}
-  - component: {fileID: 1784222958}
   m_Layer: 0
   m_Name: playerLowerWall
   m_TagString: PuckWall
@@ -3369,19 +3312,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784222953}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1784222958
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1784222953}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 1, z: 1.0000001}
-  m_Center: {x: 0, y: 0, z: -0.00000047683716}
 --- !u!1 &1812021187
 GameObject:
   m_ObjectHideFlags: 0

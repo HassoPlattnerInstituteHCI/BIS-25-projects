@@ -7,54 +7,31 @@ using Task = System.Threading.Tasks.Task;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public GameObject puck;
+
+
+    public GameObject ball;
     public GameObject player;
     public GameObject enemy;
 
-    [HideInInspector] public UpperHandle upperHandle;
-    [HideInInspector] public LowerHandle lowerHandle;
+    public Transform ballSpawn;
+    public Transform playerSpawn;
+    public Transform enemySpawn;
+
+    private UpperHandle _upperHandle;
+    private LowerHandle _lowerHandle;
 
     PantoCollider[] pantoColliders;
 
-    private int currentLevelIndex = 0;
-
-    void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
-        DontDestroyOnLoad(gameObject);
-        upperHandle = GetComponent<UpperHandle>();
-        lowerHandle = GetComponent<LowerHandle>();
+        _upperHandle = GetComponent<UpperHandle>();
+        _lowerHandle = GetComponent<LowerHandle>();
+
+        // TODO 1: remove this comment-out
+        Introduction();
     }
 
-    public void LoadNextScene()
-    {
-        SceneManager.LoadScene(++currentLevelIndex);
-    }
-
-    public async Task RenderObstacle()
-    {
-        pantoColliders = GameObject.FindObjectsOfType<PantoCollider>();
-        foreach (PantoCollider collider in pantoColliders)
-        {
-            collider.CreateObstacle();
-            collider.Enable();
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*
     async void Introduction()
     {
         Level level = GetComponent<Level>();
@@ -79,10 +56,17 @@ public class GameManager : MonoBehaviour
         GameObject sb = Instantiate(ball, ballSpawn);
 
         // TODO 3:
-        await lowerHandle.SwitchTo(sb, 50.0f);
-        upperHandle.Free();
+        await _lowerHandle.SwitchTo(sb, 50.0f);
+        _upperHandle.Free();
     }
 
-    
-    */
+    async Task RenderObstacle()
+    {
+        pantoColliders = GameObject.FindObjectsOfType<PantoCollider>();
+        foreach (PantoCollider collider in pantoColliders)
+        {
+            collider.CreateObstacle();
+            collider.Enable();
+        }
+    }
 }

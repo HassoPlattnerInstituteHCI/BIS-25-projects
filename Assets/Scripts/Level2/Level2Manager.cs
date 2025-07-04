@@ -1,3 +1,4 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -55,3 +56,4 @@ public class Level2Manager : MonoBehaviour
         gameManager.LoadNextScene();
     }
 }
+*/
